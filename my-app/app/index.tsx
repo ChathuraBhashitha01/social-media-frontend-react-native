@@ -1,15 +1,18 @@
-import { Text, View } from "react-native";
+import { View, Text, Image,StyleSheet } from 'react-native'
+import React from 'react'
+import { Input, NativeBaseProvider } from 'native-base';
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+export default function index() {
+return (
+    <View>
+        <Image source={require('../assets/images/fb-login.png')} style={styles.imgStyle}/>
+        {/* <Input variant="underlined" placeholder="Underlined" /> */}
     </View>
-  );
+    )
 }
+    
+const styles=StyleSheet.create({
+    imgStyle:{
+    width:392
+    }
+});

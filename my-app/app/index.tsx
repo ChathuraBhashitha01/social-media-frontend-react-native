@@ -8,7 +8,7 @@ return (
         <Image source={require('../assets/images/fb-login.png')} style={styles.imgStyle}/>
 
         <TextInput className='mt-[60px] w-[90%] ml-4 bg-white' 
-          label="User name"
+          label="Phone or email"
         />
         
         <TextInput className='mt-0 w-[90%] ml-4 bg-white'
@@ -17,7 +17,7 @@ return (
           right={<TextInput.Icon icon="eye" />}
         />
 
-      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='blue' onPress={() => console.log('Pressed')}>
+      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='#2C90F1' onPress={() => console.log('Pressed')}>
         <Text className="text-xl text-white font-bold">Log in</Text>
       </Button>
 

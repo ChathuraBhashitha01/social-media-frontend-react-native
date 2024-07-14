@@ -1,10 +1,9 @@
 import { View, Text, Image, StyleSheet, TextInput } from 'react-native'
 import React from 'react'
-import { Input } from '@gluestack-ui/themed';
 
 export default function signin_frm() {
   return (
-    <View>
+    <View >
       <Image source={require('../assets/images/fb-login.png')} style={styles.imgStyle}/>
       <TextInput>username</TextInput>
     </View>

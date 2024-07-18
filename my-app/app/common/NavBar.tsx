@@ -7,7 +7,7 @@ const StyledView = styled(View);
 
 export default function NavBar() {
   return (
-    <View className ='bg-[#303030] h-[18.4%] border-b border-white p-2'>
+    <StyledView className ='bg-[#303030] h-[18.4%] border-b border-white p-2'>
         <StyledView className='flex flex-row gap-5 mt-5 mb-5 pl-3'>
           <Text className="text-3xl text-white font-bold mr-20 ">facebook</Text>
           <Image source={require('../../assets/images/add.png')} className="w-8 h-8 "/>
@@ -22,6 +22,6 @@ export default function NavBar() {
           <Image source={require('../../assets/images/bell.png')} className="w-8 h-8"/>
           <Image source={require('../../assets/images/profilePic.png')} className="w-8 h-8 rounded-full "/>
         </StyledView>
-    </View>
+    </StyledView>
   )
 }       

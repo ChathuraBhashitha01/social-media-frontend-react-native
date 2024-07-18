@@ -1,9 +1,11 @@
+import {router } from 'expo-router';
 import { View, Image,StyleSheet } from 'react-native'
 import React from 'react'
 import { TextInput, Button, Text } from 'react-native-paper';
 
+
 export default function signup_frm() {
-return (
+  return (
     <View className='bg-white'>
         <Image source={require('../../assets/images/fb-login.png')} style={styles.imgStyle}/>
 
@@ -17,7 +19,7 @@ return (
           right={<TextInput.Icon icon="eye" />}
         />
 
-      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='#2C90F1' onPress={() => console.log('Pressed')}>
+      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='#2C90F1' onPress={()=>router.push("../common/MainContent")}>
         <Text className="text-xl text-white font-bold">Log in</Text>
       </Button>
 
@@ -30,7 +32,7 @@ return (
       </Button>
 
     </View>
-    )
+  )
 }
     
 const styles=StyleSheet.create({

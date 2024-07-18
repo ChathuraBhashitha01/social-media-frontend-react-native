@@ -15,9 +15,17 @@ export default function HomePage() {
         <Image source={require('../../assets/images/image-.png')} className="w-6 h-8 rounded-full mt-5 ml-4"/>
       </StyledView>
 
-      <StyledScrollView className='bg-[#303030] h-[25%]'>
+      <StyledView className='bg-[#303030] h-auto'>
+        <ScrollView horizontal>
+          <StyledView className=' bg-[#3b3a3a]  w-[25%] h-[160px] rounded-lg'>
+            <Image source={require('../../assets/images/profilePic.png')} className=" w-[100%] h-[100px]  "/>
+          </StyledView>
 
-      </StyledScrollView>
+          <StyledView className=' bg-[#3b3a3a]  w-[25%] h-[160px] rounded-lg'>
+            <Image source={require('../../assets/images/profilePic.png')} className=" w-[100%] h-[100px]  "/>
+          </StyledView>
+        </ScrollView>
+      </StyledView>
     </View>
   )
 }

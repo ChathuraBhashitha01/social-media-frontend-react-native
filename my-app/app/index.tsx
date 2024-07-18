@@ -5,9 +5,10 @@ import NavBar from './common/NavBar'
 import MainContent from './common/MainContent'
 import Profile from './page/Profile'
 import Menu from './page/Menu'
+import HomePage from './page/HomePage'
 
 export default function index() {
   return (
-    <Menu/>
+    <Profile/>
   )
 }

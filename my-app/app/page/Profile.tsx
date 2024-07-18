@@ -1,4 +1,4 @@
-import { View,Image } from 'react-native'
+import { View,Image, ScrollView } from 'react-native'
 import {Button, Text } from 'react-native-paper';
 import React from 'react'
 import { styled } from 'nativewind';
@@ -7,8 +7,8 @@ const StyledView = styled(View);
 
 export default function Profile() {
   return (
-    <View className='h-[100%] bg-black relative'>
-      <StyledView className='bg-[#303030] h-[8%] flex flex-row '>
+    <ScrollView className='h-[100%] bg-black relative'>
+      <StyledView className='bg-[#303030] flex flex-row '>
         <Image source={require('../../assets/images/back.png')} className="w-6 h-8 mt-6 ml-4 "/>
         <Text className="text-lg text-white font-semibold mr-20 mt-6 ml-4 ">Bhashitha Wickramasinghe</Text>
         <Image source={require('../../assets/images/search.png')} className="w-6 h-6 mt-7 "/>
@@ -37,6 +37,57 @@ export default function Profile() {
             <Text className="text-lg text-white font-bold mr-20 mt-1 ml-4 ">Details</Text>
 
         </StyledView>
-    </View>
+
+        <StyledView className='bg-black h-auto'>
+          <StyledView className='border-b border-black bg-[#303030]  w-[100%] h-auto '>
+            <StyledView className='flex flex-row'>
+            <Image source={require('../../assets/images/profilePic.png')} className="w-10 h-10 rounded-full mt-3 ml-2"/>
+            <Text className="text-xl text-white font-bold ml-3 mt-4 ">Bhashitha Wickramasinghe</Text>
+              <Image source={require('../../assets/images/more.png')} className="w-8 h-8 mt-4 mr-2 ml-4"/>
+              <Image source={require('../../assets/images/reject.png')} className="w-8 h-8 mt-4"/>
+            </StyledView>
+            <Text className="text-lg text-white font-light mr-20  ml-4 mt-2 mb-2 w-[90%] ">Bhashitha Wickramasinghe update his Profile Picture</Text>
+            <Image source={require('../../assets/images/profilePic.png')} className=" w-[100%] h-[400px]"/>
+
+            <StyledView className='flex flex-row mb-5 mt-5'>
+              <Image source={require('../../assets/images/like.png')} className="w-6 h-6 rounded-full mt-3 ml-4"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Like</Text>
+
+              <Image source={require('../../assets/images/chat.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Comment</Text>
+
+              <Image source={require('../../assets/images/whatsapp.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Send</Text>
+
+              <Image source={require('../../assets/images/share.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Share</Text>
+            </StyledView>
+          </StyledView>
+          <StyledView className='border-b border-black bg-[#303030]  w-[100%] h-auto '>
+            <StyledView className='flex flex-row'>
+            <Image source={require('../../assets/images/profilePic.png')} className="w-10 h-10 rounded-full mt-3 ml-2"/>
+            <Text className="text-xl text-white font-bold ml-3 mt-4 ">Bhashitha Wickramasinghe</Text>
+              <Image source={require('../../assets/images/more.png')} className="w-8 h-8 mt-4 mr-2 ml-4"/>
+              <Image source={require('../../assets/images/reject.png')} className="w-8 h-8 mt-4"/>
+            </StyledView>
+            <Text className="text-lg text-white font-light mr-20  ml-4 mt-2 mb-2 w-[90%] ">Bhashitha Wickramasinghe update his Profile Picture</Text>
+            <Image source={require('../../assets/images/profilePic.png')} className=" w-[100%] h-[400px]"/>
+
+            <StyledView className='flex flex-row mb-5 mt-5'>
+              <Image source={require('../../assets/images/like.png')} className="w-6 h-6 rounded-full mt-3 ml-4"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Like</Text>
+
+              <Image source={require('../../assets/images/chat.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Comment</Text>
+
+              <Image source={require('../../assets/images/whatsapp.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Send</Text>
+
+              <Image source={require('../../assets/images/share.png')} className="w-6 h-6 rounded-full mt-3 ml-6"/>
+              <Text className="text-sm text-white font-light ml-2 mt-4 ">Share</Text>
+            </StyledView>
+          </StyledView>
+      </StyledView>
+    </ScrollView>
   )
 }

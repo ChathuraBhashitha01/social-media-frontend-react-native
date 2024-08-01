@@ -6,7 +6,7 @@ import { TextInput, Button, Text } from 'react-native-paper';
 
 export default function signup_frm() {
   return (
-    <View className='bg-white'>
+    <View className='bg-white h-auto'>
         <Image source={require('../../assets/images/fb-login.png')} style={styles.imgStyle}/>
 
         <TextInput className='mt-[60px] w-[90%] ml-4 bg-white' 
@@ -19,7 +19,7 @@ export default function signup_frm() {
           right={<TextInput.Icon icon="eye" />}
         />
 
-      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='#2C90F1' onPress={()=>router.push("../common/MainContent")}>
+      <Button className='mt-[40px] w-[90%] h-[50px] ml-4 font-bold rounded-none' mode="contained" buttonColor='#2C90F1' onPress={()=>router.push('/page/HomePage')}>
         <Text className="text-xl text-white font-bold">Log in</Text>
       </Button>
 

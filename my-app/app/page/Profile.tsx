@@ -1,7 +1,8 @@
-import { View,Image, ScrollView } from 'react-native'
+import { View,Image, ScrollView, TouchableOpacity } from 'react-native'
 import {Button, Text } from 'react-native-paper';
 import React from 'react'
 import { styled } from 'nativewind';
+import { TextInput } from 'react-native-paper';
 
 const StyledView = styled(View);
 
@@ -36,6 +37,38 @@ export default function Profile() {
 
             <Text className="text-lg text-white font-bold mr-20 mt-1 ml-4 ">Details</Text>
 
+        </StyledView>
+
+
+        <StyledView className="bg-[#303030] h-auto border-b border-black">
+          <ScrollView horizontal showsHorizontalScrollIndicator>
+            <StyledView className="bg-[#3b3a3a] w-[100px] h-[150px] rounded-lg ml-2 mt-2 mb-2">
+              
+            </StyledView>
+            <StyledView className="bg-[#3b3a3a] w-[100px] h-[150px] rounded-lg ml-2  mt-2 mb-2">
+              <Image
+                source={require('../../assets/images/profilePic.png')}
+                className="w-[100%] h-[100%] rounded-xl"
+              />
+            </StyledView>
+            <StyledView className="bg-[#3b3a3a] w-[100px] h-[150px] rounded-lg ml-2  mt-2 mb-2">
+              <Image
+                source={require('../../assets/images/profilePic.png')}
+                className="w-w-[100%] h-[100%] rounded-xl "
+              />
+            </StyledView>
+          </ScrollView>
+        </StyledView>
+
+        <StyledView className='flex flex-row bg-[#303030] h-20 border-b border-black  mt-3 mb-3'>
+          <TouchableOpacity onPress={()=>router.push('/page/Profile')} className=" rounded-full">
+              <Image source={require('../../assets/images/profilePic.png')} className="w-12 h-12 rounded-full mt-3 ml-3" />
+          </TouchableOpacity>
+          <TextInput label="What's on your mind?" textColor='white' right={<TextInput.Icon icon="search"/>} className="w-[65%] rounded-full border-white border-2 bg-transparent ml-4 mt-3 mb-3"/>
+
+          <TouchableOpacity onPress={()=>router.push('/common/Camera')} className=" rounded-full">
+            <Image source={require('../../assets/images/image-.png')} className="w-6 h-8 rounded-full mt-5 ml-4"/>
+          </TouchableOpacity>
         </StyledView>
 
         <StyledView className='bg-black h-auto'>
